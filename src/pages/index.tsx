@@ -44,6 +44,26 @@ export default function Home() {
 
 
         <div className={styles.grid}>
+
+          <Link
+            href="/"
+            className={styles.card}
+          >
+            <h2>
+              Counter
+            </h2>
+            <p>
+              This is all about counting practice! No, wait, I mean, useReducer practice!
+            </p><br />
+            <p>I can definitely count. <br />110% already good at counting.</p>
+          </Link>
+
+
+          <div className="tutorial">
+            <CounterDemo />
+          </div>
+
+
           <a
             href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
             className={styles.card}
@@ -57,24 +77,7 @@ export default function Home() {
               Find in-depth information about Next.js features and&nbsp;API.
             </p>
           </a>
-          <Link
-            href="/"
-            className={styles.card}
-          >
-            <h2>
-              Counter
-            </h2>
-            <p>
-              This is all about counting practice! No, wait, I mean, useReducer practice!
-            </p>
-            <p>I can definitely count. 110% already good at counting.</p>
-          </Link>
 
-
-          <div className="tutorial">
-            <h1>HELLLLOOOOOOO!!!!!!!</h1>
-            <CounterDemo />
-          </div>
         </div>
 
       </main>
