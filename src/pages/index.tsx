@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import CounterDemo from '@/counterDemo'
+import Link from 'next/link'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -40,16 +41,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className={styles.center}>
-          <Image
-            className={styles.logo}
-            src="/next.svg"
-            alt="Next.js Logo"
-            width={180}
-            height={37}
-            priority
-          />
-        </div>
+
 
         <div className={styles.grid}>
           <a
@@ -65,56 +57,25 @@ export default function Home() {
               Find in-depth information about Next.js features and&nbsp;API.
             </p>
           </a>
-
-          <a
-            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+          <Link
+            href="/"
             className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
           >
             <h2>
-              Learn <span>-&gt;</span>
+              Counter
             </h2>
             <p>
-              Learn about Next.js in an interactive course with&nbsp;quizzes!
+              This is all about counting practice! No, wait, I mean, useReducer practice!
             </p>
-          </a>
+            <p>I can definitely count. 110% already good at counting.</p>
+          </Link>
 
-          <a
-            href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2>
-              Templates <span>-&gt;</span>
-            </h2>
-            <p>
-              Discover and deploy boilerplate example Next.js&nbsp;projects.
-            </p>
-          </a>
 
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2>
-              Deploy <span>-&gt;</span>
-            </h2>
-            <p>
-              Instantly deploy your Next.js site to a shareable URL
-              with&nbsp;Vercel.
-            </p>
-          </a>
+          <div className="tutorial">
+            <h1>HELLLLOOOOOOO!!!!!!!</h1>
+            <CounterDemo />
+          </div>
         </div>
-
-        <div className="tutorial">
-          <h1>HELLLLOOOOOOO!!!!!!!</h1>
-          <CounterDemo />
-        </div>
-
 
       </main>
     </>

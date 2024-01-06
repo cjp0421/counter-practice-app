@@ -27,5 +27,7 @@ export default function CounterDemo() {
     return <div className="counter-tutorial">
         <div>Count: {state.count}</div>
         {state.error && <div className="mb-2 text-red-500"></div>}
+        <button className="m-2 p-2 bg-success bg-gradient text-center">Increment</button>
+        <button className="m-2 p-2 bg-danger bg-gradient text-center">Decrement</button>
     </div>
 }
