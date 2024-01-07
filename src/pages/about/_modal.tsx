@@ -1,6 +1,8 @@
 import React from "react";
+import { ReactNode } from "react";
+import { MouseEventHandler } from "react";
 
-export default function Modal({ isOpen, onClose, children }) {
+export default function Modal({ isOpen, onClose, children }: { isOpen: boolean; onClose: MouseEventHandler; children: ReactNode }) {
     if (!isOpen) return null;
 
     return (
